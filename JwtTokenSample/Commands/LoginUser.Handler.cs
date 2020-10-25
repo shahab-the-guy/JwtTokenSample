@@ -27,6 +27,9 @@ namespace JwtTokenSample.Commands
             // this should be read from a storage, e.g. SQL Server, MongoDB
             var claims = new[]
             {
+                new Claim(JwtRegisteredClaimNames.Sub,request.Username),
+                // new Claim(JwtRegisteredClaimNames.Email,user.EmailAddress),
+                new Claim(JwtRegisteredClaimNames.Jti,Guid.NewGuid().ToString()),
                 new Claim(ClaimTypes.NameIdentifier, request.Username),
                 new Claim(ClaimTypes.Role, "admin"),
             };
