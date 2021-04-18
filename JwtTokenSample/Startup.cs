@@ -125,10 +125,7 @@ namespace JwtTokenSample
 
             app.UseHttpsRedirection();
 
-            app.UseRouting();
-
-            app.UseAuthentication(); // HERE
-
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints => { endpoints.MapControllers(); });
