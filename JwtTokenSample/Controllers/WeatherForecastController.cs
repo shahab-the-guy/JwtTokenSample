@@ -9,7 +9,8 @@ using Microsoft.Extensions.Logging;
 
 namespace JwtTokenSample.Controllers
 {
-    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+    // [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+    [Authorize]
     public sealed class WeatherForecastController : BaseController
     {
         private static readonly string[] Summaries = new[]
