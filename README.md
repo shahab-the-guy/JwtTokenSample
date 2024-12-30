@@ -1,0 +1,1 @@
+The source code for blog post [Generate/Validate JSON Web Tokens(JWT) in ASP.NET Core](https://shahab-the-guy.dev/blogPost/1d9a9efa-7062-4bfc-930a-5d2660845719/generatevalidate-json-web-tokensjwt-in-aspnet-core)
